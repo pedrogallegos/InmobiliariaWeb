@@ -1,22 +1,30 @@
-import Image from "next/image";
-import localFont from "next/font/local";
-import Layout from "../components/Layout";
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Layout from '../components/Layout'
+import FilterEstate from '@/components/home/FilterEstateSection'
+import HeroSection from '@/components/home/HeroSection'
+import PopularProperties from '@/components/home/PopularPropertiesSection'
+import Reviews from '@/components/home/ReviewsSection'
+import Blog from '@/components/home/BlogSection'
+import ActivitiesSection from '@/components/home/ActivitiesSection'
+import DetailedProperty from '@/components/home/DetailedProperty'
 
-
-export default function Home() {
+export default function Home () {
   return (
-    <Layout title="Home" description="Welcome to our website">
-      <h1>Welcome to the home page</h1>
+    <Layout title='Home' description='Welcome to our website'>
+      <main>
+        {/* Hero Section */}
+        <HeroSection />
+        {/* FilterEstate Section */}
+        <FilterEstate />
+        {/* Popular Properties Section */}
+        <PopularProperties />
+        {/* Reviews */}
+        <Reviews />
+        {/* Blog */}
+        <Blog />
+        {/* Activities Section */}
+        <ActivitiesSection />
+        <DetailedProperty />
+      </main>
     </Layout>
   )
 }

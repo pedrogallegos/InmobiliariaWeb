@@ -1,5 +1,7 @@
-import "@/styles/globals.css";
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import '@/styles/globals.css'
+import 'swiper/css'
+import 'swiper/css/grid'
+import 'swiper/css/pagination'
+export default function App ({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
