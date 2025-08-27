@@ -14,7 +14,7 @@ export default function Home () {
         {/* Hero Section */}
         <HeroSection />
         {/* FilterEstate Section */}
-        <FilterEstate />
+        <FilterEstate isHome />
         {/* Popular Properties Section */}
         <PopularProperties />
         {/* Reviews */}
@@ -23,7 +23,6 @@ export default function Home () {
         <Blog />
         {/* Activities Section */}
         <ActivitiesSection />
-        <DetailedProperty />
       </main>
     </Layout>
   )

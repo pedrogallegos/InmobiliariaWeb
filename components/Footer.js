@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import SectionLink from './utils/SectionLink'
+import SectionLink from './Utils/SectionLink'
 const sectionLinks = [
   {
     id: 'help',
